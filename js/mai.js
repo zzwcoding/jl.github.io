@@ -2,6 +2,7 @@
 				e.preventDefault();
 			};
 			var stop = function() {
+				document.getElementById("auto").pause();
 				$('.mui_sta').hide();
 				$('.mui_end').show();
 
@@ -32,7 +33,7 @@
 				$('#dowebok').fullpage({
 					'verticalCentered': false,
 					afterRender: function() {
-						$('.mui_end').show();
+						$('.mui_sta').show();
 						$('.page1_div_logo').fadeIn(1000);
 						$('.section1').find('p').delay(300).fadeIn(1000);
 						$('.page1_div_line').find('.div_img').addClass('animated fadeInLeft_50');
