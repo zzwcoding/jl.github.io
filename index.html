@@ -1,223 +1,328 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html><head>
+	<title>2019</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="file:////Users/divh/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.0/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+	<style>
+	/**
+* prism.js Github theme based on GitHub's theme.
+* @author Sam Clarke
+*/
+code[class*="language-"],
+pre[class*="language-"] {
+color: #333;
+background: none;
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+text-align: left;
+white-space: pre;
+word-spacing: normal;
+word-break: normal;
+word-wrap: normal;
+line-height: 1.4;
 
-	<head>
-		<meta charset="utf-8" />
-		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="format-detection" content="telephone=no, email=no" />
+-moz-tab-size: 8;
+-o-tab-size: 8;
+tab-size: 8;
 
-		<link href="css/pace-theme-center-atom.css" rel="stylesheet" />
-		<script src="js/pace.min.js"></script>
+-webkit-hyphens: none;
+-moz-hyphens: none;
+-ms-hyphens: none;
+hyphens: none;
+}
 
-		<link rel="stylesheet" href="css/jquery.fullPage.css">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
-		<!--<link rel="stylesheet" href="css/animate.css">-->
-		<link rel="stylesheet" href="css/animate.min.css">
-		<title>一元文化传媒</title>
-	</head>
-	<div style='display:none;'> <img src='img/logo_none.jpg' /> </div>
-	<body>
-		<div class="img_Circle"> <img src="img/Circle.png" class="div_img " /> </div>
-		<div style="    position: absolute; bottom: 0px;"> <img src="img/land.png" class="div_img " /> </div>
-		<div class="mui_div">
-			<div class="mui_sta" style="background-image: url(img/audio_strat.jpg);display: none;" onclick="stop()"></div>
-			<div class="mui_end" style="background-image: url(img/audio_stop.jpg);display: none;" onclick="star()"></div>
-			<audio id="auto" autoplay='autoplay' src="img/Corporate Mood.mp3" loop=""></audio>
-		</div>
+/* Code blocks */
+pre[class*="language-"] {
+padding: .8em;
+overflow: auto;
+/* border: 1px solid #ddd; */
+border-radius: 3px;
+/* background: #fff; */
+background: #f5f5f5;
+}
 
-		<div id="dowebok">
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+padding: .1em;
+border-radius: .3em;
+white-space: normal;
+background: #f5f5f5;
+}
 
-			<div class="section section1">
-				<div class="page1_div_logo">
-					<img src="img/Logo1.png" class="div_img" style="    width: 16%;float: left;" id="logo" />
-					<img src="img/Logo2.png" class="div_img" style="    width: 53%; padding-left: 2%;" />
-				</div>
-				<div class="page1_div_line">
-					<img src="img/Line.png" class="div_img" />
-				</div>
-				<p>海南一元文化传媒有限公司</p>
-			</div>
+.token.comment,
+.token.blockquote {
+color: #969896;
+}
 
-			<div class="section section2 ">
-				<div class="page2_div_text">
-					<img src="img/page2_text.png" class="div_img" />
-				</div>
-				<div class="page2_div_img">
-					<img src="img/page2_img.png" class="div_img" />
-				</div>
-				<div class="page2_div_line">
-					<img src="img/Line.png" class="div_img" />
-				</div>
+.token.cdata {
+color: #183691;
+}
 
-				<div class="page2_div_WeP" id='page2_div_WeP'>
-					<p>理念：智慧创造价值，创意成就典范</p>
-					<p>宗旨：提供专业的品牌策划和卓越的执行力，与客户同享成功</p>
-					<p>服务：为客户提供一等服务，创造一等价值</p>
-					<p>定位：诚信/创新/高效/务实/严谨 </p>
-					<p>愿景：与客户共建战略伙伴关系，助客户打造强势品牌</p>
-					<p>标准：市场导向/策略先行/执行第一/精诚团队</p>
-				</div>
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+color: #333;
+}
 
-			</div>
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+color: #a71d5d;
+}
 
-			<div class="section section3">
-				<div class="page3_div_text">
-					<img src="img/page3_text.png" class="div_img" />
-				</div>
-				<div class="page3_div_div">
-					<div class="page3_div_img1">
-						<img src="img/page3_img1.png" class="div_img" />
-						<div class="page3_div_p">
-							<p style="font-size: 0.5rem;top: 25%;">形象设计篇 </p>
-							<p style="font-size: 0.4rem;top: 48.5%;">标志设计 广告设计 画册设计 包装设计</p>
-							<p style="font-size: 0.4rem;top: 70.5%;">礼品开发 展览展示设计 视觉识别设计VI/CI</p>
-						</div>
-					</div>
-					<div class="page3_div_img2">
-						<img src="img/page3_img2.png" class="div_img page3_div_img" />
-						<div class="page3_div_p">
-							<p style="font-size: 0.5rem;top: 18%;">公关活动 </p>
-							<span style="font-size: 0.4rem;top: 32.5%;line-height: 0.8rem;">会务庆典  路演活动  开业庆典 新闻发布会 大型活动策划执行</span>
-						</div>
-						<div class="page3_div_img3">
-							<img src="img/page3_img3.png" class="div_img" />
-							<div class="page3_div_p">
-								<p style="font-size: 0.5rem;top: 25%;">新媒体篇 </p>
-								<p style="font-size: 0.4rem;top: 48.5%;">网站企划制作 影视策划制</p>
-								<p style="font-size: 0.4rem;top: 70.5%;"> 企业APP设计制作 企业H5设计制作</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="page3_div_img4">
-					<img src="img/page3_4.png" class="div_img" />
-					<p>策略：立足对客户产品体系与市场环境全面分析， 进行精准的问题界定与区隔分析，制定最具创造性的 广告策略与最具执行力的广告计划。</p>
-				</div>
-			</div>
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+color: #183691;
+}
 
-			<div class="section section4">
-				<div class="page4_div_text">
-					<img src="img/page4_text.png" class="div_img" />
-				</div>
-				<div class="page4_div_div">
-					<div class="page4_div_left">
-						<div class="page4_div_img">
-							<img src="img/page4_logo1.png" class="div_img" />
-						</div>
-						<div class="page4_div_img">
-							<img src="img/page4_logo3.png" class="div_img" />
-						</div>
-						<div class="page4_div_img">
-							<img src="img/page4_logo5.png" class="div_img" />
-						</div>
-						<div class="page4_div_img">
-							<img src="img/page4_logo7.png" class="div_img" />
-						</div>
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+color: #0086b3;
+}
 
-					</div>
-					<div class="page4_div_right">
-						<div class="page4_div_img">
-							<img src="img/page4_logo2.png" class="div_img" />
-						</div>
-						<div class="page4_div_img">
-							<img src="img/page4_logo4.png" class="div_img" />
-						</div>
-						<div class="page4_div_img">
-							<img src="img/page4_logo6.png" class="div_img" />
-						</div>
-						<div class="page4_div_img">
-							<img src="img/page4_logo8.png" class="div_img" />
-						</div>
+.token.tag,
+.token.selector,
+.token.prolog {
+color: #63a35c;
+}
 
-					</div>
-				</div>
-			</div>
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+color: #795da3;
+}
 
-			<div class="section section5">
-				<div class="page5_div_text">
-					<img src="img/page5_text.png" class="div_img page5_img" />
-				</div>
-				<div class="page5_div_div">
-					<p>展览展示设计</p>
-					<img src="img/page5_img1.png" class="div_img page5_img" />
-				</div>
-				<div class="page5_div_div">
-					<p>包装设计</p>
-					<img src="img/page5_img2.png" class="div_img page5_img" />
-				</div>
-				<div class="page5_div_div">
-					<p>标志设计、开业庆典</p>
-					<img src="img/page5_img3.png" class="div_img page5_img" />
-				</div>
-			</div>
+.token.entity {
+cursor: help;
+}
 
-			<div class="section section6">
-				<div class="page6_div_text">
-					<img src="img/page6_text.png" class="div_img" />
-				</div>
-				<div class="page6_div_img1">
-					<img src="img/page6_img1.png" class="div_img page6_img" />
-					<p style="top:16%" class="page6_p">和工作风格，确认我们的专业能力</p>
-					<p style="top:35%" class="page6_p">沟通项目详情，确认项目需求。我们提供报价</p>
-					<p style="top:54%" class="page6_p">确认项目内容、金额和约束条款。支付预付款</p>
-					<p style="top:72%" class="page6_p">提交，待客户验收合格</p>
-					<p style="top:91%" class="page6_p">为已完成项目免费提供咨询</p>
-				</div>
-			</div>
+.token.title,
+.token.title .token.punctuation {
+font-weight: bold;
+color: #1d3e81;
+}
 
-			<div class="section section7">
-				<div class="page7_div_text">
-					<img src="img/page7_text.png" class="div_img" />
-				</div>
-				<div>
-					<div class="page7_div_img1 ">
-						<img src="img/page7_img1.png" class="div_img page7_img_right" />
-						<div style="left: -14%;top: 7%;" class=" page7_img_left">
-							<p class="pace7_p" style=" font-size: 0.7rem;color: #2cf2a7;transform: rotate(18deg)">优秀的沟通</p>
-						</div>
-						<div class="page7_radius" style="top: 13%; left: 10%;"></div>
-						<div style="left: -26%;top: 30%;" class=" page7_img_left">
-							<p class="pace7_p" style=" font-size: 0.7rem;color: #2cf2a7;transform: rotate(9deg)">清晰的目标</p>
-						</div>
-						<div class="page7_radius" style="top: 34%; left: -1%;"></div>
-						<div style="left: -36%;top: 58%;" class=" page7_img_left">
-							<p class="pace7_p" style=" font-size: 0.7rem;color: #2cf2a7;">有效的解决方案</p>
-						</div>
-						<div class="page7_radius" style="top: 58.5%; left: -1%;"></div>
-						<div style="left: -34%;top: 84%;" class=" page7_img_left">
-							<p class="pace7_p" style=" font-size: 0.7rem;color: #2cf2a7; transform: rotate(-9deg)">我们信仰专业的力量</p>
-						</div>
-						<div class="page7_radius" style="top: 81%; left: 10%;"></div>
-					</div>
-					<div class="pace7_div_img4">
-						<img src="img/page7_img4.png" class="div_img" />
-					</div>
-				</div>
-			</div>
+.token.list {
+color: #ed6a43;
+}
 
-			<div class="section section8">
-				<div class="page8_div_text">
-					<img src="img/page8_text.png" class="div_img" />
-				</div>
-				<div class="page8_div_img1">
-					<img src="img/page8_img1.png" class="div_img" />
-				</div>
-				<div class="page8_div_img2">
-					<img src="img/page8_img2.png" class="div_img" />
-					<a style="top:11% ; font-size: 0.6rem;width: 100%;display: inline-block; position: absolute;margin-left: 16%;left: 50%;transform: translate(-50%, -50%);color: #fff;" href="tel:13698919926">13698919926</a>
-					<p style="top:47%">398331955</p>
-					<p style="top:83%">海口市美苑路65号一层</p>
-				</div>
-			</div>
+.token.inserted {
+background-color: #eaffea;
+color: #55a532;
+}
 
-		</div>
+.token.deleted {
+background-color: #ffecec;
+color: #bd2c00;
+}
 
-	</body>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/mai.js"></script>
+.token.bold {
+font-weight: bold;
+}
 
-</html>
+.token.italic {
+font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+color: #63a35c;
+}
+
+code.language-yaml {
+color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+color: #795da3;
+}
+
+.language-makefile .token.variable {
+color: #183691;
+}
+
+.language-makefile .token.builtin {
+color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+position: relative;
+padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+position: absolute;
+top: 0;
+left: 0;
+background-color: transparent;
+display: block;
+width: 100%;
+}
+
+pre[data-line] .line-highlight {
+position: absolute;
+left: 0;
+right: 0;
+padding: inherit 0;
+margin-top: 1em;
+background: hsla(24, 20%, 50%,.08);
+background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+pointer-events: none;
+line-height: inherit;
+white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+content: attr(data-start);
+position: absolute;
+top: .4em;
+left: .6em;
+min-width: 1em;
+padding: 0 .5em;
+background-color: hsla(24, 20%, 50%,.4);
+color: hsl(24, 20%, 95%);
+font: bold 65%/1.5 sans-serif;
+text-align: center;
+vertical-align: .3em;
+border-radius: 999px;
+text-shadow: none;
+box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+content: attr(data-end);
+top: auto;
+bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+.markdown-preview.markdown-preview center {
+font-weight: bolder;
+}
+.markdown-preview.markdown-preview .mume-header {
+margin: 10px 0;
+}
+
+	</style>
+</head>
+<body for="html-export">
+	<div class="mume markdown-preview  ">
+	<center><font size="5">&#x4E2A;&#x4EBA;&#x7B80;&#x5386;</font></center>
+<h4 class="mume-header" id="%E6%B1%82%E8%81%8C%E6%84%8F%E5%90%91">&#x6C42;&#x804C;&#x610F;&#x5411;</h4>
+
+<ul>
+<li>&#x524D;&#x7AEF;&#x5DE5;&#x7A0B;&#x5E08; / WEB&#x5DE5;&#x7A0B;&#x5E08;</li>
+</ul>
+<h4 class="mume-header" id="%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B">&#x4E2A;&#x4EBA;&#x7B80;&#x4ECB;</h4>
+
+<ul>
+<li>&#x5468;&#x751F; / &#x7537; / 27&#x5C81; / 4&#x5E74;&#x79BB;&#x804C; / &#x672C;&#x79D1; / &#x8FBD;&#x5B81;&#x77F3;&#x6CB9;&#x5316;&#x5DE5;&#x5927;&#x5B66;&#x81EA;&#x52A8;&#x5316;&#x7CFB; / &#x672C;&#x5730;&#x4EBA; / &#x4F4F;&#x6D77;&#x53E3;</li>
+<li>&#x7535;&#x8BDD;&#xFF1A;15607623756 / &#x90AE;&#x7BB1;&#xFF1A;<a href="mailto:413615944@qq.com">413615944@qq.com</a></li>
+</ul>
+<h5 class="mume-header" id="%E6%B5%B7%E5%8D%97%E6%97%85%E5%B1%85%E7%A7%91%E6%8A%80-201712-~-201912-web%E5%B7%A5%E7%A8%8B%E5%B8%88">&#x6D77;&#x5357;&#x65C5;&#x5C45;**&#x79D1;&#x6280; (2017.12 ~ 2019.12) Web&#x5DE5;&#x7A0B;&#x5E08;</h5>
+
+<ul>
+<li>&#x4ECE;&#x96F6;&#x5230;&#x4E00; &#x6253;&#x9020;&#x6D77;&#x5357;&#x5730;&#x4EA7;&#x5708;&#x5206;&#x9500;&#x81F3;&#x4EE3;&#x7406;&#x81F3;&#x5F00;&#x53D1;&#x5546;&#x9500;&#x552E;&#x751F;&#x6001;&#x94FE;</li>
+<li>Vue&#x5168;&#x5BB6;&#x6876;&#x642D;&#x5EFA;H5C&#x7AEF; H5B&#x7AEF; PCB&#x7AEF;</li>
+<li>WebPack&#x6784;&#x5EFA;&#x591A;&#x5BB6;B&#x7AEF;&#x5F02;&#x540C;&#x4EE3;&#x7801;&#x590D;&#x7528;&#x5206;&#x5305;&#x6846;&#x67B6;</li>
+<li>&#x4E09;&#x7AEF;&#x7528;&#x6237;&#x81F3;&#x7528;&#x6237;&#x7EC4;&#x81F3;&#x89D2;&#x8272;&#x81F3;&#x83DC;&#x5355;&#x81F3;&#x5143;&#x7D20;&#x591A;&#x7EA7;&#x6743;&#x9650;&#x7BA1;&#x7406;</li>
+<li>&#x4F01;&#x4E1A;AO &#x4F01;&#x4E1A;ERP &#x8BF8;&#x591A;&#x4E1A;&#x52A1;&#x6A21;&#x5757;&#x5B9E;&#x73B0;</li>
+<li>MpVue&#x5FEB;&#x901F;&#x8FC1;&#x79FB;H5&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x5C0F;&#x7A0B;&#x5E8F;</li>
+</ul>
+<h5 class="mume-header" id="%E6%B5%B7%E5%8D%97%E6%98%93%E7%A7%91%E6%8A%80-201704-~-201712-web%E5%B7%A5%E7%A8%8B%E5%B8%88">&#x6D77;&#x5357;&#x6613;**&#x79D1;&#x6280; (2017.04 ~ 2017.12) Web&#x5DE5;&#x7A0B;&#x5E08;</h5>
+
+<ul>
+<li>&#x822A;&#x7A7A;&#x5019;&#x8865;&#x4E1A;&#x52A1;&#x5B9E;&#x73B0;</li>
+<li>Node&#x6846;&#x67B6;ThinkJs / &#x5B58;&#x50A8;Redis + MySql / &#x5FAE;&#x4FE1;&#x534F;&#x8BAE;Wechaty / &#x5BB9;&#x5668;Docker</li>
+<li>&#x5FAE;&#x4FE1;&#x822A;&#x7A7A;&#x4E1A;&#x52A1;&#x95EE;&#x7B54;&#x673A;&#x5668;&#x4EBA;</li>
+<li>&#x722C;&#x53D6;&#x6570;&#x636E; &#x89C2;&#x5BDF; &#x8BA1;&#x7B97;&#x5206;&#x6790; &#x5019;&#x8865;&#x6982;&#x7387;</li>
+</ul>
+<h5 class="mume-header" id="%E6%B5%B7%E5%8D%97%E8%88%AA%E5%86%A0%E7%A7%91%E6%8A%80-201609-~-201704-%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88">&#x6D77;&#x5357;&#x822A;&#x51A0;**&#x79D1;&#x6280; (2016.09 ~ 2017.04) &#x524D;&#x7AEF;&#x5DE5;&#x7A0B;&#x5E08;</h5>
+
+<ul>
+<li>&#x4F20;&#x7EDF;Jsp&#x8F6C;&#x5411;&#x524D;&#x540E;&#x5206;&#x79BB;&#x67B6;&#x6784;</li>
+<li>Nginx&#x4EE3;&#x7406; / ArtTemplate&#x524D;&#x7AEF;&#x6A21;&#x7248;&#x5F15;&#x64CE;</li>
+</ul>
+<h5 class="mume-header" id="%E5%B9%BF%E5%B7%9E%E7%BB%AD%E6%97%A5%E7%A7%91%E6%8A%80-201508-~-201607-java%E5%B7%A5%E7%A8%8B%E5%B8%88">&#x5E7F;&#x5DDE;&#x7EED;&#x65E5;**&#x79D1;&#x6280; (2015.08 ~ 2016.07) JAVA&#x5DE5;&#x7A0B;&#x5E08;</h5>
+
+<ul>
+<li>&#x6DF7;&#x5408;&#x6846;&#x67B6;React Native / &#x5B58;&#x50A8;Oracal / IBM WebSphere&#x4F53;&#x7CFB;</li>
+<li>Jsx &#x7F16;&#x5199;&#x7EC4;&#x4EF6;&#x5316;&#x6DF7;&#x5408;APP / C#&#x539F;&#x751F;JS Bridge&#x96C6;&#x6210;&#x652F;&#x4ED8;&#x5B9D;&#x817E;&#x8BAF;&#x76F4;&#x64AD;&#x4FDD;&#x5229;&#x89C6;&#x9891;&#x6258;&#x7BA1;&#x7B49;SDK</li>
+<li>Ios App &#x53D1;&#x5E03; / &#x8BC1;&#x4E66;&#x7BA1;&#x7406;&#x7B49;</li>
+<li>IBM Portal / Was &#x6784;&#x5EFA;&#x96C6;&#x56E2;&#x95E8;&#x6237;&#x7CFB;&#x7EDF; &#x7F16;&#x5199; Porlet &#x7EC4;&#x4EF6;&#x4EE5;&#x53CA; Sevlet &#x5DE5;&#x7A0B;</li>
+</ul>
+<h4 class="mume-header" id="%E6%8A%80%E8%83%BD%E6%89%A9%E5%B1%95">&#x6280;&#x80FD;&amp;&#x6269;&#x5C55;</h4>
+
+<ul>
+<li>&#x719F;&#x6089; Html / Css / Js Html5&#x57FA;&#x672C;&#x8BED;&#x4E49;&#x5316; / Css3&#x7B80;&#x5355;&#x52A8;&#x753B; / Es6&#x5E38;&#x7528;&#x65B0;&#x7279;&#x6027;</li>
+<li>&#x719F;&#x6089; Bootstrap / Vue / React&#x7B49; MV*&#x6A21;&#x578B;</li>
+<li>&#x719F;&#x6089; Svn / Git &#x7248;&#x672C;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</li>
+<li>&#x719F;&#x6089; Eclipse / HBuilder&#x7B49;&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883; / Vscode / Submit&#x7B49;&#x4EE3;&#x7801;&#x7F16;&#x8F91;&#x5668;</li>
+<li>&#x719F;&#x6089; Os X / Win / Linux &#x5F00;&#x53D1;&#x7CFB;&#x7EDF;</li>
+<li>&#x719F;&#x6089; WebPack &#x524D;&#x7AEF;&#x5DE5;&#x7A0B;&#x5316;&#x5DE5;&#x5177;</li>
+</ul>
+
+	</div>
+	
+	
+
+
+
+
+
+
+
+
+
+</body></html>
